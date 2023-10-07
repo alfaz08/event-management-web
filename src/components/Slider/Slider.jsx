@@ -28,13 +28,13 @@ const Slider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="/src/assets/-1x-1.jpg" alt="" />
+          <img  src="/src/assets/-1x-1.jpg" alt="" />
         </SwiperSlide>
          <SwiperSlide>
-          <img src="/src/assets/corporate meeting.jpg" alt="" />
+          <img  src="/src/assets/corporate meeting.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/src/assets/award ceremony.jpg" alt="" />
+          <img  src="/src/assets/award ceremony.jpg" alt="" />
         </SwiperSlide>
        
         
@@ -42,7 +42,7 @@ const Slider = () => {
           <img src="/src/assets/expo.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/src/assets/wan-san-yip-ID1yWa1Wpx0-unsplash.jpg" alt="" />
+          <img  src="/src/assets/wan-san-yip-ID1yWa1Wpx0-unsplash.jpg" alt="" />
         </SwiperSlide>
         
       </Swiper>

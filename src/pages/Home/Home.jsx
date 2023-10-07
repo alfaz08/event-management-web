@@ -1,7 +1,8 @@
 import Slider from "../../components/Slider/Slider";
 import Services from "../../components/Services/Services";
 import Sidebar from "../../components/Sidebar/Sidebar";
-
+import Clients from "../../components/Clients/Clients";
+import Footer from "../../components/Footer/Footer";
 const Home = () => {
   return (
     <div>
@@ -14,6 +15,10 @@ const Home = () => {
         <Sidebar></Sidebar>
         </div>
       </div>
+      
+      <Clients></Clients>
+      <Footer></Footer>
+     
     </div>
   );
 };
