@@ -1,7 +1,49 @@
 import { Link } from "react-router-dom";
 import { FaGooglePlusG } from "react-icons/fa";
+import { useContext, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+ import 'react-toastify/dist/ReactToastify.css';
+import Aos from "aos";
+import { AuthContext } from "../../Providers/AuthProviders";
 
 const Register = () => {
+  const {createUser} = useContext(AuthContext)
+  const {googleLogin} = useContext(AuthContext)
+  const [error,setError] = useState("")
+  
+  const handleRegister=(e)=>{
+    e.preventDefault();
+    const name= e.target.name.value;
+    const email= e.target.email.value;
+    const password= e.target.password.value;
+    console.log(name,email,password);
+ 
+    if((!/^(?=.*[A-Z])(?=.*[\W_]).{6,}$/.test(password)) ){
+      const errorMessage = "Password must be at least eight characters long with at least one Capital letter and one special character."
+     setError(errorMessage);
+     toast(errorMessage)
+    }
+    else{
+      setError('')
+      createUser(email,password)
+      .then(res=>console.log(res.user))
+      .catch(error=>{
+        console.error(error.message)
+        toast.error(error.message)
+      })
+    }
+  }
+
+  const handleSocialLogin =(media)=>{
+    media()
+    .then(res=>console.log(res))
+    .catch(err=>console.log(err))
+  }
+
+
+
+
+
   return (
     <div>
       <div className="hero">
@@ -11,25 +53,25 @@ const Register = () => {
       <p className="py-6 text-center text-xl">Please give your information correctly</p>
     </div>
     <div className="card w-[500px] flex-shrink-o shadow-2xl bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300">
-      <form className="card-body">
+      <form onSubmit={handleRegister} className="card-body">
         <div className="form-control">
           <label className="label">
             <span className="label-text text-xl">Your Name</span>
           </label>
-          <input type="text" name="name" placeholder="Your Name" className="input input-bordered" required />
+          <input type="text" required name="name" placeholder="Your Name" className="input input-bordered" required />
         </div>
   
         <div className="form-control">
           <label className="label">
             <span className="label-text text-xl">Email</span>
           </label>
-          <input type="email" name="email" placeholder="email" className="input input-bordered" required />
+          <input type="email" name="email" required placeholder="email" className="input input-bordered" required />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text text-xl">Password</span>
           </label>
-          <input name="password" type="password" placeholder="password" className="input input-bordered" required />
+          <input name="password" required type="password" placeholder="password" className="input input-bordered" required />
           
         </div>
         <div className="form-control mt-6">
@@ -47,11 +89,12 @@ const Register = () => {
       <hr className="ml-2 mr-4 w-36 border-black"/>
      </div>
      <div className="text-center mb-4 mt-4 ">
-      <button className=" text-white btn bg-red-500"><FaGooglePlusG  className="text-white  text-2xl"></FaGooglePlusG>Register with google</button>
+      <button onClick={()=>handleSocialLogin(googleLogin)} className=" text-white btn bg-red-500"><FaGooglePlusG  className="text-white  text-2xl"></FaGooglePlusG>Register with google</button>
      </div>
     </div>
   </div>
 </div>
+<ToastContainer/>
     </div>
   );
 };
