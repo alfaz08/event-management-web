@@ -1,12 +1,15 @@
-
-
+import { NavLink } from "react-router-dom";
+import './Navbar.css'
 const Navbar = () => {
   const navLinks = <>
-    <li><a>Item 1</a></li>
+    <li><NavLink   to="/">Home</NavLink></li>
+    <li><NavLink to="/login">Login</NavLink></li>
+    <li><NavLink to="/registration">Registration</NavLink></li>
+    <li><NavLink to="/contact">Contact</NavLink></li>
      
   </>
   return (
-    <div>
+    <div className="sticky-navbar">
       <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
@@ -17,7 +20,7 @@ const Navbar = () => {
         {navLinks}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <img className=" w-24" src="/src/assets/COrporate.png" alt="" />
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -25,7 +28,8 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <a className="btn btn-warning">Button</a>
+    <img className=" w-12" src="/src/assets/person.png" />
   </div>
 </div>
     </div>
