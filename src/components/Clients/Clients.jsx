@@ -16,7 +16,7 @@ const Clients = () => {
    
   return (
     <>
-    <h2  className="text-center font-semibold text-5xl">Our Clients</h2>
+    <h2  className="text-center font-semibold text-5xl">Meet Our Clients</h2>
        <Swiper
         slidesPerView={1}
         spaceBetween={10}
