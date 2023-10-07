@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "event_name": "Business Seminar",
+    "image": "https://i.ibb.co/BGyKtbL/wan-san-yip-ID1y-Wa1-Wpx0-unsplash.jpg",
+    "price": 25000,
+    "short_description": "A high-level corporate summit for industry leaders."
+  },
+  {
+    "id": "2",
+    "event_name": "Trade Shows",
+    "image": "https://i.ibb.co/85ggSc7/tradeshow-coordination.jpg",
+    "price": 18000,
+    "short_description": "The latest in tech innovations and trends."
+  },
+  {
+    "id": "3",
+    "event_name": "Trade Expo",
+    "image": "https://i.ibb.co/DbKRfXS/expo.jpg",
+    "price": 21000,
+    "short_description": "Discussing financial strategies for the future."
+  },
+  {
+    "id": "4",
+    "event_name": "Workshop",
+    "image": "https://i.ibb.co/gvm4MD5/Workshops.jpg",
+    "price": 15000,
+    "short_description": "Master the art of modern marketing techniques."
+  },
+  {
+    "id": "5",
+    "event_name": "Product Launches",
+    "image": "https://i.ibb.co/mN994np/1x-1.jpg",
+    "price": 22000,
+    "short_description": "Developing leadership skills for success."
+  },
+  {
+    "id": "6",
+    "event_name": "Corporate Meetings",
+    "image": "https://i.ibb.co/vhfmGy0/corporate-meeting.jpg",
+    "price": 19000,
+    "short_description": "Exploring innovative HR strategies and practices."
+  },
+  {
+    "id": "7",
+    "event_name": "Award Ceremony",
+    "image": "https://i.ibb.co/xHVjzsg/award-ceremony.jpg",
+    "price": 26000,
+    "short_description": "A platform to discuss sustainable business practices."
+  },
+  {
+    "id": "8",
+    "event_name": "Conference",
+    "image": "https://i.ibb.co/W6k6vsc/pexels-pavel-danilyuk-8761523.jpg",
+    "price": 17000,
+    "short_description": "Optimizing supply chain operations for efficiency."
+  },
+  {
+    "id": "9",
+    "event_name": "Charity Events",
+    "image": "https://i.ibb.co/zFTjTzN/ccc-700-x-400-web-image.jpg",
+    "price": 23000,
+    "short_description": "Innovations and solutions in the healthcare industry."
+  },
+  {
+    "id": "10",
+    "event_name": "Holiday Party",
+    "image": "https://i.ibb.co/9gZydH1/South-Shore-Company-Holiday-Party-dance-floor.jpg",
+    "price": 23000,
+    "short_description": "Innovations and solutions in the healthcare industry."
+  }
+]
