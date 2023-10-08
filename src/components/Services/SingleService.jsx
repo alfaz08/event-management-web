@@ -12,7 +12,12 @@ const SingleService = ({service}) => {
     <h2 className="card-title text-center">{event_name}</h2>
     <p>Price: $ {price}</p>
     <div className="card-actions justify-center">
-      <button className="btn btn-warning"><Link to={`/card/${id}`}>See Details</Link></button>
+    <Link to={`/card/${id}`}>
+    <button className="btn btn-warning">
+      See Details
+      </button>
+      </Link>
+      
     </div>
   </div>
 </div>
