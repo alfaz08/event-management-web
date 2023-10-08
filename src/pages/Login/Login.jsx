@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
 import { ToastContainer, toast } from 'react-toastify';
  import 'react-toastify/dist/ReactToastify.css';
@@ -7,11 +7,12 @@ import { ToastContainer, toast } from 'react-toastify';
 
 
 const Login = () => {
-  
+  const navigate =useNavigate();
   const {signIn}=useContext(AuthContext)
   const {googleLogin} = useContext(AuthContext)
-  const [loggedIn,setLoggedIn] =useState(false)
-
+  // const [loggedIn,setLoggedIn] =useState(false)
+  const location =useLocation()
+  
   const handleLogin=(e)=>{
     e.preventDefault();
     const email= e.target.email.value;
@@ -22,7 +23,8 @@ const Login = () => {
     .then(res=>{
       console.log(res.user)
     toast.success('Login Successful')
-    setLoggedIn(true)
+    // setLoggedIn(true)
+    navigate(location?.state?location.state:'/')
     })
     .catch(error=>{
       toast.error(error.message)
@@ -44,9 +46,9 @@ const Login = () => {
 
   return (
     <div>
-      {
+      {/* {
         loggedIn && <Navigate to="/"></Navigate>
-      }
+      } */}
       <div className="hero">
   <div className="hero-content flex-col">
     <div className="text-center lg:text-left">
