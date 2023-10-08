@@ -14,6 +14,7 @@ const Register = () => {
   const handleRegister=(e)=>{
     e.preventDefault();
     const name= e.target.name.value;
+    const photo= e.target.photo.value;
     const email= e.target.email.value;
     const password= e.target.password.value;
     console.log(name,email,password);
@@ -50,7 +51,7 @@ const Register = () => {
   <div className="hero-content flex-col">
     <div className="text-center lg:text-left">
       <h1 className="text-5xl font-bold text-center">Register now</h1>
-      <p className="py-6 text-center text-xl">Please give your information correctly</p>
+      
     </div>
     <div className="card w-[500px] flex-shrink-o shadow-2xl bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300">
       <form onSubmit={handleRegister} className="card-body">
@@ -59,6 +60,12 @@ const Register = () => {
             <span className="label-text text-xl">Your Name</span>
           </label>
           <input type="text" required name="name" placeholder="Your Name" className="input input-bordered" required />
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text text-xl">Photo URL</span>
+          </label>
+          <input type="text" name="photo" placeholder="Your Name" className="input input-bordered" required />
         </div>
   
         <div className="form-control">
@@ -79,7 +86,7 @@ const Register = () => {
         </div>
       </form>
      
-      <p className="text-center mt-4 mb-4">
+      <p className="text-center mb-4">
         <span className="text-lg">Already have an account please</span>
         <Link to="/login"  className="font-bold text-blue-600 text-xl"> Login</Link>
       </p>

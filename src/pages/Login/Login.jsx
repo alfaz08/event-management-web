@@ -1,6 +1,28 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
-
+import { AuthContext } from "../../Providers/AuthProviders";
+import { ToastContainer, toast } from 'react-toastify';
+ import 'react-toastify/dist/ReactToastify.css';
+ 
 const Login = () => {
+  
+  const {signIn}=useContext(AuthContext)
+  
+  const handleLogin=(e)=>{
+    e.preventDefault();
+    const email= e.target.email.value;
+    const password= e.target.password.value;
+    console.log(email,password);
+
+    signIn(email,password)
+    .then(res=>console.log(res.user))
+    .catch(error=>{
+      console.error(error.message)
+      toast.error(error.message)
+    })
+  }
+  
+
   return (
     <div>
       <div className="hero">
@@ -10,7 +32,7 @@ const Login = () => {
       <p className="py-6 text-center text-xl">Please enter your email and password for enjoy many features of Corporate Event Solution</p>
     </div>
     <div className="card w-full flex-shrink-0 max-w-md shadow-2xl bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300">
-      <form className="card-body">
+      <form onSubmit={handleLogin} className="card-body">
         <div className="form-control">
           <label className="label">
             <span className="label-text text-xl ">Email</span>
@@ -38,6 +60,7 @@ const Login = () => {
     </div>
   </div>
 </div>
+ <ToastContainer></ToastContainer>
     </div>
   );
 };
