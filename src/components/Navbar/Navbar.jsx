@@ -70,7 +70,7 @@ const Navbar = () => {
     <a className="btn btn-warning" onClick={handleLogOut}>Sign Out</a>
       </>
       :
-      <Link to="/login"><button className="btn btn-warning">Login</button></Link>
+      <Link to="/login"><button className="btn btn-warning hover:text-black hover:bg-white">Login</button></Link>
     }
   </div>
 </div>

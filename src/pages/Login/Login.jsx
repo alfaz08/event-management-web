@@ -73,7 +73,7 @@ const Login = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn text-xl">Login</button>
+          <button className="btn text-xl hover:text-white hover:bg-black">Login</button>
         </div>
       </form>
      
@@ -89,7 +89,7 @@ const Login = () => {
       <hr className="ml-2 mr-4 w-36 border-black"/>
      </div>
      <div className="text-center mb-4 mt-4 ">
-      <button onClick={()=>handleSocialLogin(googleLogin)} className=" text-white btn bg-red-500"><FaGooglePlusG  className="text-white  text-2xl"></FaGooglePlusG>Login with google</button>
+      <button onClick={()=>handleSocialLogin(googleLogin)} className=" text-white btn bg-red-500"><FaGooglePlusG  className="text-white  text-2xl "></FaGooglePlusG>Login with google</button>
      </div>
 
 
