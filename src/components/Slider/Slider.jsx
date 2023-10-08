@@ -28,21 +28,21 @@ const Slider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img  src="/src/assets/-1x-1.jpg" alt="" />
+          <img  src="https://i.ibb.co/mN994np/1x-1.jpg" alt="" />
         </SwiperSlide>
          <SwiperSlide>
-          <img  src="/src/assets/corporate meeting.jpg" alt="" />
+          <img  src="https://i.ibb.co/BGyKtbL/wan-san-yip-ID1y-Wa1-Wpx0-unsplash.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img  src="/src/assets/award ceremony.jpg" alt="" />
+          <img  src="https://i.ibb.co/vhfmGy0/corporate-meeting.jpg" alt="" />
         </SwiperSlide>
        
         
         <SwiperSlide>
-          <img src="/src/assets/expo.jpg" alt="" />
+          <img src="https://i.ibb.co/xHVjzsg/award-ceremony.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img  src="/src/assets/wan-san-yip-ID1yWa1Wpx0-unsplash.jpg" alt="" />
+          <img  src="https://i.ibb.co/W6k6vsc/pexels-pavel-danilyuk-8761523.jpg" alt="" />
         </SwiperSlide>
         
       </Swiper>

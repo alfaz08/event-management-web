@@ -27,7 +27,13 @@ const Register = () => {
       const errorMessage = "Password must be at least eight characters long with at least one Capital letter and one special character."
      setError(errorMessage);
      toast(errorMessage)
-     e.target.reset()
+     
+     const passwordInput = document.querySelector('input[name="password"]');
+    if (passwordInput) {
+      passwordInput.value = '';
+    }
+    
+
     }
     else{
       setError('')
@@ -41,6 +47,8 @@ const Register = () => {
         console.error(error.message)
         toast.error(error.message)
       })
+      //
+      
 
 
     }

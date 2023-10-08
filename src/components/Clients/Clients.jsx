@@ -46,25 +46,25 @@ const Clients = () => {
       >
         
         <SwiperSlide id='image'>
-          <img id="image" src="/src/assets/Oracle-Logo.png" alt="" />
+          <img id="image" src="https://i.ibb.co/k5jDd4B/Oracle-Logo.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img id="image" src="/src/assets/Microsoft.jpg" alt="" />
+          <img id="image" src="https://i.ibb.co/cySP7JX/Microsoft.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img id="image" src="/src/assets/Accenture-logo.png" alt="" />
+          <img id="image" src="https://i.ibb.co/dDVybqy/google.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img id="image" src="/src/assets/Xiaomi-logo.jpg" alt="" />
+          <img id="image" src="https://i.ibb.co/VjjzWFQ/Accenture-logo.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img id="image" src="/src/assets/Brain Station--23 Ltd.jpg" alt="" />
+          <img id="image" src="https://i.ibb.co/XxQNsjp/Brain-Station-23-Ltd.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img  id="image" src="/src/assets/649_unilever.jpg" alt="" />
+          <img  id="image" src="https://i.ibb.co/7222QJg/GE-Symbol.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img id="image" src="/src/assets/GE-Symbol.png" alt="" />
+          <img id="image" src="https://i.ibb.co/Y2RtHqY/649-unilever.jpg" alt="" />
         </SwiperSlide>
         
       </Swiper>
