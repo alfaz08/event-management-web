@@ -1,5 +1,5 @@
 import Aos from "aos";
-
+import { Link } from "react-router-dom";
 const SingleService = ({service}) => {
   const {event_name,id,image,price,short_description} =service;
   return (
@@ -12,7 +12,7 @@ const SingleService = ({service}) => {
     <h2 className="card-title text-center">{event_name}</h2>
     <p>Price: $ {price}</p>
     <div className="card-actions justify-center">
-      <button className="btn btn-warning">See Details</button>
+      <button className="btn btn-warning"><Link to={`/card/${id}`}>See Details</Link></button>
     </div>
   </div>
 </div>

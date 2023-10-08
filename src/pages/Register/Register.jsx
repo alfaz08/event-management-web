@@ -4,15 +4,17 @@ import { useContext, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
  import 'react-toastify/dist/ReactToastify.css';
 import Aos from "aos";
+import { Navigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
-import { updateProfile } from "firebase/auth";
-import { auth } from "../../firebase/firebase.init";
+
+
 
 const Register = () => {
   const {createUser} = useContext(AuthContext)
   const {googleLogin} = useContext(AuthContext)
   const [error,setError] = useState("")
-  
+  const [loggedIn,setLoggedIn] =useState(false)
+
   const handleRegister=(e)=>{
     e.preventDefault();
     const name= e.target.name.value;
@@ -25,18 +27,20 @@ const Register = () => {
       const errorMessage = "Password must be at least eight characters long with at least one Capital letter and one special character."
      setError(errorMessage);
      toast(errorMessage)
+     e.target.reset()
     }
     else{
       setError('')
       createUser(email,password)
-      .then(res=>console.log(res.user))
+      .then(res=>{
+        console.log(res.user)
+        toast.success('Registration Successful') 
+        setLoggedIn(true)
+      })
       .catch(error=>{
         console.error(error.message)
         toast.error(error.message)
       })
-
-    
-      
 
 
     }
@@ -55,6 +59,9 @@ const Register = () => {
 
   return (
     <div>
+      {
+        loggedIn && <Navigate to="/"></Navigate>
+      }
       <div className="hero">
   <div className="hero-content flex-col">
     <div className="text-center lg:text-left">

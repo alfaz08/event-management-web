@@ -8,9 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 const Navbar = () => {
   const {user,logOut} =useContext(AuthContext)
    
-  if(user!==null){
-    const displayName=user.displayName;
-  }
+  
   const handleLogOut=()=>{
     logOut()
     .then(()=>
@@ -25,12 +23,12 @@ const Navbar = () => {
     <li><NavLink   to="/">Home</NavLink></li>
     <li><NavLink to="/login">Login</NavLink></li>
     <li><NavLink to="/register">Register</NavLink></li>
-    <li><NavLink to="/contact">Contact</NavLink></li>
+    <li><NavLink to="/offer">Offer</NavLink></li>
     {
       user && <>
       <li><NavLink to="/profile">Profile</NavLink></li>
     <li><NavLink to="/cart">Cart</NavLink></li>
-      </>
+    </>
     }
      
   </>
