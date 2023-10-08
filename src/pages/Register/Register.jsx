@@ -5,6 +5,8 @@ import { ToastContainer, toast } from 'react-toastify';
  import 'react-toastify/dist/ReactToastify.css';
 import Aos from "aos";
 import { AuthContext } from "../../Providers/AuthProviders";
+import { updateProfile } from "firebase/auth";
+import { auth } from "../../firebase/firebase.init";
 
 const Register = () => {
   const {createUser} = useContext(AuthContext)
@@ -32,6 +34,11 @@ const Register = () => {
         console.error(error.message)
         toast.error(error.message)
       })
+
+    
+      
+
+
     }
   }
 
@@ -42,7 +49,8 @@ const Register = () => {
   }
 
 
-
+  //update Profile
+  
 
 
   return (

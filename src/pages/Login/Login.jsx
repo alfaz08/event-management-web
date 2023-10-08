@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
 import { ToastContainer, toast } from 'react-toastify';
  import 'react-toastify/dist/ReactToastify.css';
- 
+ import { FaGooglePlusG } from "react-icons/fa";
+
+
 const Login = () => {
   
   const {signIn}=useContext(AuthContext)
-  
+  const {googleLogin} = useContext(AuthContext)
+
   const handleLogin=(e)=>{
     e.preventDefault();
     const email= e.target.email.value;
@@ -20,6 +23,12 @@ const Login = () => {
       console.error(error.message)
       toast.error(error.message)
     })
+  }
+
+  const handleSocialLogin =(media)=>{
+    media()
+    .then(res=>console.log(res))
+    .catch(err=>console.log(err))
   }
   
 
@@ -57,6 +66,19 @@ const Login = () => {
         <span className="text-lg ">Don't have an account please</span>
         <Link to="/register"  className=" font-bold text-blue-600 text-xl"> Register</Link>
       </p>
+
+     
+      <div className="flex items-center justify-center">
+     <hr className="mr-2 ml-4 w-36 border-black" />
+      <span>or</span>
+      <hr className="ml-2 mr-4 w-36 border-black"/>
+     </div>
+     <div className="text-center mb-4 mt-4 ">
+      <button onClick={()=>handleSocialLogin(googleLogin)} className=" text-white btn bg-red-500"><FaGooglePlusG  className="text-white  text-2xl"></FaGooglePlusG>Login with google</button>
+     </div>
+
+
+
     </div>
   </div>
 </div>
