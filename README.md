@@ -1,4 +1,4 @@
-# Project Title: Coporate Event Solution with Auth
+# Project Title: Event Management Website with Auth
 
 
 ## Features
@@ -11,3 +11,5 @@
 - User go the specific private route when log in.
 - Two private route only see when user log in.
 - Responsive for all device.
+
+## Live Link : https://event-management-auth-be921.web.app/

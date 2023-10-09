@@ -16,7 +16,7 @@ const Clients = () => {
    
   return (
     <>
-    <h2  className="text-center font-semibold text-5xl">Meet Our Clients</h2>
+    <h2  className="text-center mt-8 font-semibold text-4xl">Meet Our Clients</h2>
        <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -52,7 +52,7 @@ const Clients = () => {
           <img id="image" src="https://i.ibb.co/cySP7JX/Microsoft.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img id="image" src="https://i.ibb.co/dDVybqy/google.png" alt="" />
+          <img id="image" src="https://i.ibb.co/X8VqYYX/79183.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
           <img id="image" src="https://i.ibb.co/VjjzWFQ/Accenture-logo.png" alt="" />

@@ -1,5 +1,5 @@
 import { FaRegUser,FaRegIdCard,FaCheckSquare,FaBookOpen,FaBars } from "react-icons/fa";
-
+import LowerSideBar from "../LowerSideBar/LowerSideBar";
 
 const Sidebar = () => {
   return (
@@ -44,7 +44,12 @@ const Sidebar = () => {
       <a href="" className="p-4 flex text-lg items-center border rounded-lg">
        <FaBars className="mr-3 text-4xl" > </FaBars> Shortlist
        </a>
+       <div className="bg-white">
+       <LowerSideBar></LowerSideBar>
+       </div>
       </div>
+
+      
     </div>
   );
 };

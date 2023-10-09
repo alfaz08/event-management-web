@@ -43,7 +43,7 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: C.Because when we give two value for addition one is string and another is number than javascript automatically convert the number value in string and concate  them.
+#### Answer: C.Because when give two value for addition one is string and another is number than javascript automatically convert the number value in string and concate  them so ut 12.
 
 <i>Write your explanation here</i>
 

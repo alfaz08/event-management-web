@@ -23,7 +23,7 @@ const Navbar = () => {
     <li><NavLink   to="/">Home</NavLink></li>
     <li><NavLink to="/login">Login</NavLink></li>
     <li><NavLink to="/register">Register</NavLink></li>
-    <li><NavLink to="/offer">Offer</NavLink></li>
+    <li><NavLink to="/contact">Contact</NavLink></li>
     {
       user && <>
       <li><NavLink to="/profile">Profile</NavLink></li>

@@ -43,8 +43,8 @@ const router = createBrowserRouter([
       element: <PrivateRoute><Cart></Cart></PrivateRoute>
     },
     {
-      path:"/offer",
-      element: <PrivateRoute> <Offer></Offer> </PrivateRoute>
+      path:"/contact",
+      element: <Offer></Offer>
     },
     {
       

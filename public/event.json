@@ -4,69 +4,71 @@
     "event_name": "Business Seminar",
     "image": "https://i.ibb.co/BGyKtbL/wan-san-yip-ID1y-Wa1-Wpx0-unsplash.jpg",
     "price": 25000,
-    "short_description": "A high-level corporate summit for industry leaders."
+    "short_description": "Elevate Your Events with Expert Seminars.",
+    "details":"Elevate your event management skills with expert guidance. Join our seminar for actionable insights, industry trends, and networking opportunities to enhance your professional growth and success in the field."
   },
   {
     "id": "2",
     "event_name": "Trade Shows",
     "image": "https://i.ibb.co/85ggSc7/tradeshow-coordination.jpg",
     "price": 18000,
-    "short_description": "The latest in tech innovations and trends."
+    "short_description": "Trade Show Extravaganza: Don't Miss It!",
+    "details":"Explore diverse business opportunities at our trade shows. Discover innovation, connect with industry leaders, and expand your network, gaining valuable insights that drive growth and competitiveness."
   },
   {
     "id": "3",
     "event_name": "Trade Expo",
     "image": "https://i.ibb.co/DbKRfXS/expo.jpg",
     "price": 21000,
-    "short_description": "Discussing financial strategies for the future."
+    "short_description": "Trade Expo: Unveil New Business Horizons.",
+    "details":"Unveil new business horizons at our Trade Expo event. Explore the latest trends, technologies, and opportunities in your industry while connecting with experts and forging strategic partnerships."
   },
   {
     "id": "4",
     "event_name": "Workshop",
     "image": "https://i.ibb.co/gvm4MD5/Workshops.jpg",
     "price": 15000,
-    "short_description": "Master the art of modern marketing techniques."
+    "short_description": "Unlock Skills at Our Empowering Workshops!",
+    "details":"Unlock valuable skills at our empowering workshops. Join us for hands-on learning, expert guidance, and personal development sessions that empower you to excel in your career and endeavors."
   },
   {
     "id": "5",
     "event_name": "Product Launches",
     "image": "https://i.ibb.co/mN994np/1x-1.jpg",
     "price": 22000,
-    "short_description": "Developing leadership skills for success."
+    "short_description": "Experience Unveilings at Our Product Launches.",
+    "details":" Experience the excitement of innovative unveilings at our product launch events. Be the first to witness cutting-edge products and solutions, positioning yourself at the forefront of industry advancements."
   },
   {
     "id": "6",
     "event_name": "Corporate Meetings",
     "image": "https://i.ibb.co/vhfmGy0/corporate-meeting.jpg",
     "price": 19000,
-    "short_description": "Exploring innovative HR strategies and practices."
+    "short_description": "Elevate Your Business with Expert Corporate Meetings.",
+    "details":"Elevate your business through expert corporate meetings. Collaborate, strategize, and achieve success with our professional event management services, ensuring your meetings are productive and impactful."
   },
   {
     "id": "7",
     "event_name": "Award Ceremony",
     "image": "https://i.ibb.co/xHVjzsg/award-ceremony.jpg",
     "price": 26000,
-    "short_description": "A platform to discuss sustainable business practices."
+    "short_description": "Honor Excellence at Our Prestigious Award.",
+    "details":"Honor excellence at our prestigious award ceremonies. Celebrate outstanding achievements and recognize industry leaders, fostering a culture of innovation, dedication, and excellence within your organization."
   },
   {
     "id": "8",
     "event_name": "Conference",
     "image": "https://i.ibb.co/W6k6vsc/pexels-pavel-danilyuk-8761523.jpg",
     "price": 17000,
-    "short_description": "Optimizing supply chain operations for efficiency."
+    "short_description": "Empower Your Vision at Our Inspiring Conferences.",
+    "details":"Empower your vision at our inspiring conferences. Gain invaluable insights, network with industry experts, and stay updated on emerging trends, equipping yourself to lead and thrive in a rapidly evolving landscape."
   },
   {
     "id": "9",
-    "event_name": "Charity Events",
-    "image": "https://i.ibb.co/zFTjTzN/ccc-700-x-400-web-image.jpg",
-    "price": 23000,
-    "short_description": "Innovations and solutions in the healthcare industry."
-  },
-  {
-    "id": "10",
     "event_name": "Holiday Party",
     "image": "https://i.ibb.co/9gZydH1/South-Shore-Company-Holiday-Party-dance-floor.jpg",
     "price": 23000,
-    "short_description": "Innovations and solutions in the healthcare industry."
+    "short_description": "Spark Joy at Our Festive Holiday Parties.",
+    "details":"Spark joy and camaraderie at our festive holiday parties. Celebrate the season with colleagues and friends, enjoying memorable entertainment, delectable cuisine, and a joyful atmosphere that makes the holidays special."
   }
 ]

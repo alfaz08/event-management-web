@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
 const SingleCardDetails = ({singleCard}) => {
-  const {event_name,id,image,price,short_description} =singleCard;
+  const {event_name,id,image,price,details} =singleCard;
   return (
     <div className="grid grid-cols-2 mt-4 gap-6">
 
       <div className="md:border md:border-amber-400">
-        <img className=" h-[250px] md:h-[500px] w-full" src={image} alt="" />
+        <img className="h-[250px] md:h-[500px] w-full" src={image} alt="" />
       </div>
 
       <div>
@@ -18,7 +18,7 @@ const SingleCardDetails = ({singleCard}) => {
   <input type="radio" name="rating-1" className="mask mask-star  bg-amber-400" />
   <input type="radio" name="rating-1" className="mask mask-star  bg-amber-400" />
 </div>
-         <h2 className="text-lg mt-2">{short_description}</h2>
+         <h2 className="text-lg mt-2 text-left">{details}</h2>
 
          <h2 className="font-bold mt-2">$ {price}</h2>
          <div className="bg-amber-400 flex justify-between items-center sm:w-[200px] md:w-[400px] h-[100px] rounded-lg mt-4">

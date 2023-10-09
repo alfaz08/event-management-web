@@ -3,6 +3,7 @@ import Services from "../../components/Services/Services";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Clients from "../../components/Clients/Clients";
 import Footer from "../../components/Footer/Footer";
+import Member from "../../components/Members/Member";
 const Home = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const Home = () => {
       </div>
       
       <Clients></Clients>
+      <Member></Member>
       <Footer></Footer>
      
     </div>
