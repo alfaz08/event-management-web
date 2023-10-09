@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGooglePlusG } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
@@ -15,8 +15,8 @@ const Register = () => {
   const {googleLogin} = useContext(AuthContext)
   const [error,setError] = useState("")
   const [loggedIn,setLoggedIn] =useState(false)
-  const [displayName, setDisplayName] = useState("");
-  const [photoURL, setPhotoURL] = useState("");
+
+
 
   const handleRegister=(e)=>{
     e.preventDefault();
@@ -24,6 +24,7 @@ const Register = () => {
     const photo= e.target.photo.value;
     const email= e.target.email.value;
     const password= e.target.password.value;
+
     console.log(name,email,password);
  
     if((!/^(?=.*[A-Z])(?=.*[\W_]).{6,}$/.test(password)) ){
@@ -62,6 +63,7 @@ const Register = () => {
           })
           toast.success('Registration and Login Successful') 
           setLoggedIn(true)
+         
         })
         .catch(error=>{
           console.error(error.message)

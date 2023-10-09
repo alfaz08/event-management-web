@@ -57,13 +57,13 @@ const Navbar = () => {
       <>
       {
         user.displayName?
-        <span className="mr-2 bg-amber-400 h-12 flex items-center rounded-xl">{user.displayName}</span>
+        <span className="mr-2 p-2 bg-amber-400 h-12 flex items-center rounded-xl">{user.displayName}</span>
         :
-        <span className="mr-2 bg-amber-400 h-12 flex items-center rounded-xl">{user.email}</span>
+        <span className="mr-2  bg-amber-400 h-12 flex items-center rounded-xl">{user.email}</span>
       }
       {
         user.photoURL?
-        <img className=" rounded-full mr-2 w-12" src={user.photoURL} />
+        <img className=" rounded-full mr-2 w-12 h-12" src={user.photoURL} />
         :
         <img className=" w-12" src="/src/assets/person.png" /> 
      }
