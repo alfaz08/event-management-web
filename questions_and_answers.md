@@ -122,7 +122,7 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: C. Because when we use if condition forEach take it as boolean value so when get 0 it take as falsy value so count is not increment but when take another value took as true so the count is increment.
+#### Answer: C. Because when we use if condition forEach loop the loop take it as boolean context so when get 0 it take as falsy value so count is not increment but when take another value took as true so the count is increment.
 
 <i>Write your explanation here</i>
 

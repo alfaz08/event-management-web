@@ -1,8 +1,13 @@
-# React + Vite
+# Project Title: Coporate Event Solution with Auth
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Show all the card from fetch API.
+- Sign Up website using Name,Photo URL,Email and Password with firsbase.
+- Login website using Email and Password.
+- Show error when user go to the sign up give the password which has not atleast 6 character,one special character and one capital letter.
+- At Login when email and password  did not match show error.
+- User go the specific private route when log in.
+- Two private route only see when user log in.
+- Responsive for all device.
