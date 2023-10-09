@@ -39,19 +39,7 @@ const Register = () => {
     
 
     }
-    // else{
-    //   setError('')
-    //   createUser(email,password)
-    //   .then(res=>{
-    //     console.log(res.user)
-    //     toast.success('Registration Successful') 
-    //     setLoggedIn(true)
-    //   })
-    //   .catch(error=>{
-    //     console.error(error.message)
-    //     toast.error(error.message)
-    //   })
-      //
+    
       else{
         setError('')
         createUser(email,password)
@@ -79,6 +67,9 @@ const Register = () => {
     media()
     .then(res=>console.log(res))
     .catch(err=>console.log(err))
+    
+      
+    
   }
 
 
@@ -141,6 +132,10 @@ const Register = () => {
      </div>
      <div className="text-center mb-4 mt-4 ">
       <button onClick={()=>handleSocialLogin(googleLogin)} className=" text-white btn bg-red-500"><FaGooglePlusG  className="text-white  text-2xl"></FaGooglePlusG>Register with google</button>
+     
+     
+      
+     
      </div>
     </div>
   </div>
