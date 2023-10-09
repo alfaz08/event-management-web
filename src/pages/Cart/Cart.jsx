@@ -2,8 +2,13 @@
 
 const Cart = () => {
   return (
-    <div>
-      <h2 className='font-bold text-6xl flex justify-center mt-12'>Coming Soon</h2>
+    <div className="flex justify-center items-center">
+      <ul className="steps steps-vertical">
+  <li className="step step-primary">Register</li>
+  <li className="step step-primary">Choose plan</li>
+  <li className="step">Purchase</li>
+  <li className="step">Receive Product</li>
+</ul>
     </div>
   );
 };

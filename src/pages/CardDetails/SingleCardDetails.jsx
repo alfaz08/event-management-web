@@ -42,7 +42,7 @@ const SingleCardDetails = ({singleCard}) => {
           
           {/* <h2>Add Promo code or voucher</h2>
           <input type="text" placeholder="Type here" className="input input-bordered border-amber-400 input-accent w-full max-w-xs" /> */}
-        <div className="flex items-center mt-4 sm: w-[50px] md:w-[400px]">
+        <div className="md:flex items-center mt-4 sm: w-[50px] md:w-[400px]">
   <input
     type="text"
     className=" px-4 py-2 border border-amber-400 rounded-l-md focus:outline-none focus:ring focus:border-blue-300 flex-grow"

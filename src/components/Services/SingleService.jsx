@@ -12,9 +12,16 @@ const SingleService = ({service}) => {
     <h2 className="card-title text-center">{event_name}</h2>
     <h2 className="text-lg">{short_description}</h2>
     <p className="text-xl font-bold">Price: $ {price}</p>
-    <div className="card-actions justify-center">
+    <div className="card-actions justify-between">
+    <div className="rating mt-2">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-amber-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-amber-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-amber-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-amber-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-amber-400" />
+</div>
     <Link to={`/card/${id}`}>
-    <button className="btn btn-warning hover:text-black hover:bg-white">
+    <button className="btn btn-warning  hover:text-black hover:bg-white">
       See Details
       </button>
       </Link>
