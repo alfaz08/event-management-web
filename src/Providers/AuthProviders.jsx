@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../firebase/firebase.init";
 
@@ -39,6 +39,25 @@ const AuthProviders = ({children}) => {
     const unsubscribe= onAuthStateChanged(auth,(currentUser)=>{
       setUser(currentUser)
       setLoading(false)
+    
+    //update profile
+
+    // if(currentUser){
+    //   updateProfile(auth.currentUser,{
+    //     displayName: "jkhfk",
+    //     photoURL: "https://i.ibb.co/g3TGcrr/Original.jpg"
+    //   })
+    //   .then({
+
+    //   })
+    //   .catch({
+
+    //   });
+    // }
+
+
+
+
     });
     return ()=>{
       unsubscribe()
@@ -50,13 +69,23 @@ const AuthProviders = ({children}) => {
     return signOut(auth)
   }
 
+  // //update profile
+  // if(user)
+  // updateProfile(auth,user,{
+  //   displayName:"Alfaz",
+  //   photoURL: "https://i.ibb.co/g3TGcrr/Original.jpg"
+  //  })
+  //  .the((res)=>console.log(res.user))
+  //  .catch((error)=>console.error(error.message))
+
   const authInfo={
     createUser,
     googleLogin,
     signIn,
     logOut,
     user,
-    loading
+    loading,
+    
   }
   
   return (

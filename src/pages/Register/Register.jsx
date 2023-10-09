@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import Aos from "aos";
 import { Navigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
+import { updateProfile } from "firebase/auth";
 
 
 
@@ -14,6 +15,8 @@ const Register = () => {
   const {googleLogin} = useContext(AuthContext)
   const [error,setError] = useState("")
   const [loggedIn,setLoggedIn] =useState(false)
+  const [displayName, setDisplayName] = useState("");
+  const [photoURL, setPhotoURL] = useState("");
 
   const handleRegister=(e)=>{
     e.preventDefault();
@@ -35,19 +38,35 @@ const Register = () => {
     
 
     }
-    else{
-      setError('')
-      createUser(email,password)
-      .then(res=>{
-        console.log(res.user)
-        toast.success('Registration Successful') 
-        setLoggedIn(true)
-      })
-      .catch(error=>{
-        console.error(error.message)
-        toast.error(error.message)
-      })
+    // else{
+    //   setError('')
+    //   createUser(email,password)
+    //   .then(res=>{
+    //     console.log(res.user)
+    //     toast.success('Registration Successful') 
+    //     setLoggedIn(true)
+    //   })
+    //   .catch(error=>{
+    //     console.error(error.message)
+    //     toast.error(error.message)
+    //   })
       //
+      else{
+        setError('')
+        createUser(email,password)
+        .then(userCredential=>{
+          const user = userCredential.user;
+          updateProfile(user,{
+            displayName:name,
+            photoURL: photo
+          })
+          toast.success('Registration and Login Successful') 
+          setLoggedIn(true)
+        })
+        .catch(error=>{
+          console.error(error.message)
+          toast.error(error.message)
+        })
       
 
 

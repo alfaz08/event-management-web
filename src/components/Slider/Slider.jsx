@@ -28,10 +28,17 @@ const Slider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img  src="https://i.ibb.co/mN994np/1x-1.jpg" alt="" />
+          {/* <img  src="https://i.ibb.co/mN994np/1x-1.jpg" alt="" /> */}
+          <div className="image-container">
+          <img src="https://i.ibb.co/mN994np/1x-1.jpg" alt="" />
+          <div className="text-overlay">Text for Slide 3utyu</div>
+        </div>
+          
         </SwiperSlide>
+        
          <SwiperSlide>
           <img  src="https://i.ibb.co/BGyKtbL/wan-san-yip-ID1y-Wa1-Wpx0-unsplash.jpg" alt="" />
+         
         </SwiperSlide>
         <SwiperSlide>
           <img  src="https://i.ibb.co/vhfmGy0/corporate-meeting.jpg" alt="" />
